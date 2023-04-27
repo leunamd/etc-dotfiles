@@ -1,0 +1,39 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sdc7
+UUID=7cfce885-5b4c-41e4-99ee-d6755abaeb8e	/         	btrfs     	rw,noatime,compress-force=zstd:3,ssd,space_cache=v2,subvolid=256,subvol=/@	0 0
+
+# /dev/sdc5
+UUID=1184-9166      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/sdc7
+UUID=7cfce885-5b4c-41e4-99ee-d6755abaeb8e	/home     	btrfs     	rw,noatime,compress-force=zstd:3,ssd,space_cache=v2,subvolid=257,subvol=/@home	0 0
+
+# /dev/sdc7
+UUID=7cfce885-5b4c-41e4-99ee-d6755abaeb8e	/home/manuel/Downloads	btrfs     	rw,noatime,compress-force=zstd:3,ssd,space_cache=v2,subvolid=264,subvol=/@home_manuel_downloads	0 0
+
+# /dev/sdc7
+UUID=7cfce885-5b4c-41e4-99ee-d6755abaeb8e	/.snapshots	btrfs     	rw,noatime,compress-force=zstd:3,ssd,space_cache=v2,subvolid=258,subvol=/@snapshots	0 0
+
+# /dev/sdc7
+UUID=7cfce885-5b4c-41e4-99ee-d6755abaeb8e	/var/log  	btrfs     	rw,noatime,compress-force=zstd:3,ssd,space_cache=v2,subvolid=259,subvol=/@var_log	0 0
+
+# /dev/sdc7
+UUID=7cfce885-5b4c-41e4-99ee-d6755abaeb8e	/var/cache	btrfs     	rw,noatime,compress-force=zstd:3,ssd,space_cache=v2,subvolid=262,subvol=/@var_cache	0 0
+
+# /dev/sdc7
+UUID=7cfce885-5b4c-41e4-99ee-d6755abaeb8e	/var/lib/docker	btrfs     	rw,noatime,compress-force=zstd:3,ssd,space_cache=v2,subvolid=263,subvol=/@var_lib_docker	0 0
+
+# /dev/sdc7
+UUID=7cfce885-5b4c-41e4-99ee-d6755abaeb8e	/var/tmp  	btrfs     	rw,noatime,compress-force=zstd:3,ssd,space_cache=v2,subvolid=265,subvol=/@var_tmp	0 0
+
+# /dev/sdc6
+UUID=e9740b8f-17ff-453a-b148-2d9a75b68377	none      	swap      	defaults  	0 0
+
+##mounted volumes
+#shared with windows
+UUID=FCDA871BDA86D0F6 			  /mnt/c 		  ntfs 	  defaults,uid=1000,gid=1000,umask=377  0 2
+UUID=3C3474993474583A 			  /mnt/e 		  ntfs    defaults,uid=1000,gid=1000,umask=377  0 2
+UUID=F4F4B144F4B10A3E 			  /mnt/f 		  ntfs    defaults,uid=1000,gid=1000,umask=000  0 2
