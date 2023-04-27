@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install 
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Syncing installed packages to git...
+When = PostTransaction
+Exec = /usr/bin/runuser -u manuel /home/manuel/personal/linux-utils/on_package_install_remove.sh
