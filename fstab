@@ -29,8 +29,9 @@ UUID=7cfce885-5b4c-41e4-99ee-d6755abaeb8e	/var/lib/docker	btrfs     	rw,noatime,
 # /dev/sdc7
 UUID=7cfce885-5b4c-41e4-99ee-d6755abaeb8e	/var/tmp  	btrfs     	rw,noatime,compress-force=zstd:3,ssd,space_cache=v2,subvolid=265,subvol=/@var_tmp	0 0
 
-# /dev/sdc6
-UUID=e9740b8f-17ff-453a-b148-2d9a75b68377	none      	swap      	defaults  	0 0
+# swap
+UUID=7cfce885-5b4c-41e4-99ee-d6755abaeb8e	/swap		btrfs		subvol=/@swap										0 0
+/swap/swapfile					none		swap		sw											0 0
 
 ##mounted volumes
 #shared with windows
